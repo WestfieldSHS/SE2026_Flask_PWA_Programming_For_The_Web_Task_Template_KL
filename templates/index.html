@@ -1,27 +1,19 @@
 {% extends 'layout.html' %} {% block content %}
 <div class="container">
+  {% endblock %}
 
-row[0] = setID
-row[1] = set_name
-row[2] = hyperlink
-row[3] = year
-row[4] = about
-row[5] = image
-row[6] = language
-
-{% for row in content %}
-<div class="card">
-  <img
-    class="card-image"
-    src="{{ row[5] }}"
-    alt="Product image for the {{ row[1] }} TCG set."
-  />
-  <h1 class="card-name">{{ row[1] }}</h1>
-  <p class="card-about">{{ row[4] }}</p>
-  <a class="card-link" href="{{ row[3] }}"
-    ><button class="btn">Read More</button></a
-  >
+  {% for row in content %}
+  <div class="card">
+    <img
+      class="card-image"
+      src="{{ row[5] }}"
+      alt="Product image for the {{ row[1] }} TCG set."
+    />
+    <h1 class="card-name">{{ row[1] }}</h1>
+    <p class="card-about">{{ row[4] }}</p>
+    <a class="card-link" href="{{ row[3] }}"
+      ><button class="btn">Read More</button></a
+    >
+  </div>
+  {% endfor %}
 </div>
-{% endfor %}
-</div>
-{% endblock %}

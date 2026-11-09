@@ -1,0 +1,7 @@
+row[0] = setID
+row[1] = set_name
+row[2] = hyperlink
+row[3] = year
+row[4] = about
+row[5] = image
+row[6] = language
