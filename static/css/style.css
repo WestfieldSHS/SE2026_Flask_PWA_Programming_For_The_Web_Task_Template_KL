@@ -49,8 +49,9 @@ nav ul li a:hover {
 }
 
 nav h1 {
-  color: #106d69;
+  color: #1e09a9;
   margin-bottom: 0.5rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .container {
@@ -90,11 +91,13 @@ nav h1 {
 }
 
 .card-about {
-  text-overflow: ellipsis;
-  width: 15rem;
-  white-space: nowrap;
-  overflow: hidden;
-  margin-bottom: 1rem;
+  height: 150px;
+  overflow-y: auto;
+  overflow-y: hidden;
+  border-bottom: 1px solid #222;
+  padding-bottom: 5px;
+  text-align: left;
+  margin-left: 6px;
 }
 
 .btn {
@@ -107,9 +110,10 @@ nav h1 {
   margin: 0 1rem;
   padding: 0.25rem 2rem;
   transition: all 0.25s ease-in-out;
-  background: hsl(110, 21%, 93%);
-  color: hsl(141, 100%, 22%);
-  margin-bottom: 1rem;
+  background: hsl(208, 15%, 83%);
+  color: hsl(208, 97%, 40%);
+  margin-bottom: 4px;
+  margin-top: 4px;
 }
 
 .btn:focus,
@@ -124,3 +128,4 @@ nav h1 {
   text-align: justify;
   text-justify: inter-word;
 }
+
