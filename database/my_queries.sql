@@ -3,9 +3,9 @@
 
 SELECT * FROM "sets";
 
-CREATE TABLE sets(setID INTEGER NOT NULL PRIMARY KEY,set_name TEXT NOT NULL, hyperlink TEXT NOT NULL,year INTEGER NOT NULL, about TEXT NOT NULL,image TEXT NOT NULL,language TEXT NOT NULL);
+CREATE TABLE sets(setID INTEGER NOT NULL PRIMARY KEY,set_name TEXT NOT NULL, hyperlink TEXT NOT NULL,year INTEGER NOT NULL, about TEXT NOT NULL,image TEXT NOT NULL,language TEXT NOT NULL, number_of_cards INTEGER NOT NULL);
 
-INSERT INTO sets(set_name, hyperlink, year, about, image, language)
+INSERT INTO sets(set_name, hyperlink, year, about, image, language, number_of_cards)
 
     VALUES(
     'Ascended Heroes',
