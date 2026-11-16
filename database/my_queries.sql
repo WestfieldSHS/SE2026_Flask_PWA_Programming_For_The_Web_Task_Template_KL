@@ -3,9 +3,9 @@
 
 SELECT * FROM "sets";
 
-CREATE TABLE sets(setID INTEGER NOT NULL PRIMARY KEY,set_name TEXT NOT NULL, hyperlink TEXT NOT NULL,year INTEGER NOT NULL, about TEXT NOT NULL,image TEXT NOT NULL,language TEXT NOT NULL, number_of_cards INTEGER NOT NULL);
+CREATE TABLE sets(setID INTEGER NOT NULL PRIMARY KEY,set_name TEXT NOT NULL, hyperlink TEXT NOT NULL,year INTEGER NOT NULL, about TEXT NOT NULL,image TEXT NOT NULL,language TEXT NOT NULL);
 
-INSERT INTO sets(set_name, hyperlink, year, about, image, language, number_of_cards)
+INSERT INTO sets(set_name, hyperlink, year, about, image, language)
 
     VALUES(
     'Ascended Heroes',
@@ -58,4 +58,31 @@ INSERT INTO sets(set_name, hyperlink, year, about, image, language)
     '2026',
     'The skies belong to Mega Rayquaza ex in Pokémon Delta Reign! Mega Golurk ex, Mega Malamar ex, and Mega Golisopod ex join the battle alongside new two-card Legendary Stadiums featuring connecting artwork and powerful effects.',
     'https://tcgplayer-cdn.tcgplayer.com/set_icon/24831ME06DeltaReign.png',
+    'English');
+
+INSERT INTO sets(set_name, hyperlink, year, about, image, language)
+    VALUES(
+    'Prismatic Evolutions',
+    'https://www.tcgplayer.com/categories/trading-and-collectible-card-games/pokemon/sv-prismatic-evolutions',
+    '2025',
+    "Prismatic Evolutions is the fourth Special Expansion of the Scarlet & Violet Series. This set's card list is all about Eevee and Eeveelutions.",
+    'https://tcgplayer-cdn.tcgplayer.com/set_icon/23821SVPrismaticEvolutions.png',
+    'English');
+
+INSERT INTO sets(set_name, hyperlink, year, about, image, language)
+    VALUES(
+    'Prismatic Evolution',
+    'https://www.tcgplayer.com/categories/trading-and-collectible-card-games/pokemon/sv-prismatic-evolutions',
+    '2025',
+    "Prismatic Evolutions is the fourth Special Expansion of the Scarlet & Violet Series. This set's card list is all about Eevee and Eeveelutions.",
+    'https://tcgplayer-cdn.tcgplayer.com/set_icon/23821SVPrismaticEvolutions.png',
+    'English');
+
+INSERT INTO sets(set_name, hyperlink, year, about, image, language)
+    VALUES(
+    '',
+    '',
+    '2025',
+    "",
+    '',
     'English');
