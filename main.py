@@ -10,9 +10,11 @@ app = Flask(__name__)
 @app.route("/", methods=["POST", "GET"])
 
 def index():
-    language = request.args.get('language')
-    if language:
-        data = dbHandler.listExtensionByLanguage(language)
+    year = request.args.get('year')
+    if year:
+        data = dbHandler.listSetByYear(year)
     else:
-        data = dbHandler.listExtension()
+        data = dbHandler.listSet()
     return render_template("/index.html", content=data)
+if __name__ == '__main__':
+  app.run(debug=True, host='0.0.0.0', port=5000) 
