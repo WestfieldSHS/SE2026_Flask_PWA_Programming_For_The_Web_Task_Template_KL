@@ -12,7 +12,7 @@ app = Flask(__name__)
 def index():
     expansion = request.args.get('expansion')
     if expansion:
-        data = dbHandler.listSetByYear(expansion)
+        data = dbHandler.listSetByExpansion(expansion)
     else:
         data = dbHandler.listSet()
     return render_template("/index.html", content=data)
