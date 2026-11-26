@@ -116,3 +116,13 @@ INSERT INTO sets(set_name, hyperlink, year, about, image, language, number_of_ca
     '230',
     'Scarlet and Violet');
 
+INSERT INTO sets(set_name, hyperlink, year, about, image, language, number_of_cards, expansion)
+    VALUES(
+    'Lost Origin',
+    'https://www.tcgplayer.com/categories/trading-and-collectible-card-games/pokemon/swsh11-lost-origin',
+    '2022',
+    "Lost Origin is the eleventh expansion of the Sword & Shield Series and includes Trainer Gallery cards. This set is themed around Giratina and features the return of the Lost Zone mechanic.",
+    'https://tcgplayer-cdn.tcgplayer.com/set_icon/3118SWSH11LostOrigin.png',
+    'English',
+    '247',
+    'Sword and Shield');

@@ -113,6 +113,10 @@ nav h1 {
   margin-top: 0.5rem;
 }
 
+.card-expansion {
+  color:hsl(4, 100%, 36%)
+}
+
 .btn {
   border: 0.5px solid rgb(247, 236, 121);
   background: none;
@@ -162,8 +166,8 @@ nav h1 {
 }
 
 .filter-btn:hover {
-  background: hsl(177, 82%, 38%);
-  transform: translateY(-2px);
+  background: hsl(5, 56%, 74%);
+  transform: translateY(-5px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
@@ -171,4 +175,3 @@ nav h1 {
   transform: translateY(0);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
