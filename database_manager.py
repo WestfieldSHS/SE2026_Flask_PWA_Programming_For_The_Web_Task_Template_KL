@@ -7,8 +7,8 @@ def listSet():
   con.close()
   return data
 
-def listSetByYear(year):
+def listSetByExpansion(expansion):
     with sql.connect("database/data_source.db") as con:
         cur = con.cursor()
-        data = cur.execute("SELECT * FROM sets WHERE year = ?", (year,)).fetchall()
+        data = cur.execute("SELECT * FROM sets WHERE expansion = ?", (expansion,)).fetchall()
     return data
